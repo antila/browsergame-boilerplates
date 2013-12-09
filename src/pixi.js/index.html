@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Pixi.js boilerplate</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+        }
+        canvas {
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
+    <script src="/bower_components/requirejs/require.js"></script>
+    <script>
+        require.config({
+            baseUrl: 'js',
+            paths: {
+                pixi: '/bower_components/pixi/bin/pixi'
+            },
+            shim: {
+                'pixi': {
+                    exports: 'PIXI'
+                }
+            }
+        });
+
+        requirejs(['main'], function (main) {
+            main.init();
+        });
+    </script>
+</head>
+<body>
+</body>
+</html>
