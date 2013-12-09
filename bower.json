@@ -1,0 +1,21 @@
+{
+  "name": "browsergame-boilerplates",
+  "version": "0.0.1",
+  "homepage": "https://github.com/antila/browsergame-boilerplates",
+  "authors": [
+    "Anders Antila <anders.antila@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "pixi": "~1.3.0",
+    "requirejs": "~2.1.9"
+  }
+}

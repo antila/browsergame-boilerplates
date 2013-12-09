@@ -1,0 +1,17 @@
+{
+  "name": "browsergame-boilerplates",
+  "version": "0.0.1",
+  "description": "browsergame-boilerplates",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/antila/browsergame-boilerplates.git"
+  },
+  "author": "Anders Antila <anders.antila@gmail.com>",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "gitHead": "9f22bf98c51cbc5173e4293b17a2153fa4025a9e",
+  "devDependencies": {
+    "express": "~3.4.6"
+  }
+}
