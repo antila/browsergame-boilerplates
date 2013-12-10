@@ -1,6 +1,4 @@
-define([
-    'game'
-], function (game) {
+define(function () {
     var singleton = function () {
         var player;
 
@@ -8,7 +6,7 @@ define([
             player.rotation += 0.1;
         }
 
-        var init = function() {
+        var init = function(stage, updateList) {
             // create a texture from an image path
             var texture = PIXI.Texture.fromImage("assets/entities/bunny.png");
             // create a new Sprite using the texture
@@ -22,10 +20,10 @@ define([
             player.position.x = 200;
             player.position.y = 150;
 
-            game.stage.addChild(player);
+            stage.addChild(player);
 
             // Add callback to update in main render loop
-            game.updateList.push(update);
+            updateList.push(update);
         }
 
         return {

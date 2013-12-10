@@ -1,6 +1,7 @@
 define([
-    'pixi'
-], function (PIXI) {
+    'pixi',
+    'entities/player',
+], function (PIXI, player) {
     var singleton = function () {
         var updateList = [];
         var stage = stage = new PIXI.Stage(0x66FF99);
@@ -19,6 +20,9 @@ define([
         }
 
         var init = function() {
+            // Init everything
+            player.init(stage, updateList);
+
             requestAnimFrame(animate);
         }
 
