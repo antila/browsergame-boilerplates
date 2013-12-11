@@ -1,6 +1,6 @@
 define([
     'pixi',
-    'entities/player',
+    'entities/player'
 ], function (PIXI, player) {
     var singleton = function () {
         var updateList = [];
